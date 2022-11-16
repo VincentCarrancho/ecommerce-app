@@ -160,7 +160,7 @@ export default function PrimarySearchAppBar() {
               inputProps={{ 'aria-label': 'search' }}
             />
           </Search>
-          <h2 class='Title'>Ecommerce Site</h2>    
+          <h2 class='Title'>E-Commerce</h2>    
           <h3 class="Orders">Orders</h3>
          <ShoppingCartIcon className='Cart'/>
         </Toolbar>
