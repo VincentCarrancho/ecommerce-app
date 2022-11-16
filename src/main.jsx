@@ -4,6 +4,7 @@ import App from './App'
 import Navbar from './Components/Navbar'
 import CssBaseline from '@mui/material/CssBaseline';
 import SubNavbar from './Components/SubNavbar'
+import Sidebar from './Components/Sidebar'
 
 
 
@@ -13,5 +14,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <CssBaseline/>
     <Navbar/>
     <SubNavbar/>
+    <Sidebar/>
   </React.StrictMode>
 )
