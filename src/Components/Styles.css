@@ -6,7 +6,7 @@
     position:absolute; right: 100px;
 }
 
-.Title{
-    
-    text-align: center;
+.Title{  
+    margin: auto;
+    padding-right: 300px;
 }

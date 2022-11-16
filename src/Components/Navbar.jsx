@@ -52,13 +52,6 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-// const styles = {
-//   // this group of buttons will be aligned to the right side
-//   toolbarButtons: {
-//     marginLeft: 'auto',
-//   },
-// };
-
 export default function PrimarySearchAppBar() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
@@ -125,7 +118,6 @@ export default function PrimarySearchAppBar() {
       <MenuItem>
         <IconButton size="large" aria-label="show 4 new mails" color="inherit">
           <Badge badgeContent={4} color="error">
-            {/* <MailIcon /> */}
           </Badge>
         </IconButton>
         <p>Messages</p>
@@ -137,7 +129,6 @@ export default function PrimarySearchAppBar() {
           color="inherit"
         >
           <Badge badgeContent={17} color="error">
-            {/* <NotificationsIcon /> */}
           </Badge>
         </IconButton>
         <p>Notifications</p>
@@ -150,7 +141,6 @@ export default function PrimarySearchAppBar() {
           aria-haspopup="true"
           color="inherit"
         >
-          {/* <AccountCircle /> */}
         </IconButton>
         <p>Profile</p>
       </MenuItem>
