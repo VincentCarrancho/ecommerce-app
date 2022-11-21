@@ -24,31 +24,31 @@ export default function ClippedDrawer() {
         sx={{
           width: drawerWidth,
           flexShrink: 0,
-          [`& .MuiDrawer-paper`]: { width: drawerWidth, boxSizing: 'border-box' },
+          [`& .MuiDrawer-paper`]: { width: drawerWidth, boxSizing: 'border-box', position: 'static' },
         }}
       >
-        <Toolbar />
+        <Toolbar/>
         <Box sx={{ overflow: 'auto'}}>
           <List>
-            {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-              <ListItem key={text} disablePadding>
+            {['Shoes', 'Games', 'Consoles', 'Electronics','Decor'].map((text, index) => (
+              <ListItem key={text} disablePadding={false}> 
                 <ListItemButton>
-                  <ListItemIcon>
+                  {/* <ListItemIcon>
                     {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                  </ListItemIcon>
-                  <ListItemText primary={text} />
+                  </ListItemIcon> */}
+                  <ListItemText primary={text}/>
                 </ListItemButton>
               </ListItem>
             ))}
-          </List>
+          </List>       
           <Divider />
           <List>
-            {['All mail', 'Trash', 'Spam'].map((text, index) => (
-              <ListItem key={text} disablePadding>
+            {['Sony', 'Panini', 'Nike', 'Apple', 'Adidas'].map((text, index) => (
+              <ListItem key={text} disablePadding={false}>
                 <ListItemButton>
-                  <ListItemIcon>
+                  {/* <ListItemIcon>
                     {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                  </ListItemIcon>
+                  </ListItemIcon> */}
                   <ListItemText primary={text} />
                 </ListItemButton>
               </ListItem>
