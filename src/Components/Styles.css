@@ -1,0 +1,16 @@
+.Orders{
+    position:absolute; right: 200px;
+}
+
+.Cart{
+    position:absolute; right: 100px;
+}
+
+.Title{  
+    margin: auto;
+    padding-right: 300px;
+}
+
+.Categories{
+    margin:auto;
+}
