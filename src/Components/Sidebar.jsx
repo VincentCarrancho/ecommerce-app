@@ -24,36 +24,68 @@ export default function ClippedDrawer() {
         sx={{
           width: drawerWidth,
           flexShrink: 0,
-          [`& .MuiDrawer-paper`]: { width: drawerWidth, boxSizing: 'border-box', position: 'static' },
+          [`& .MuiDrawer-paper`]: { width: 200, boxSizing: 'border-box', position: 'static' },
         }}
       >
         <Toolbar/>
         <Box sx={{ overflow: 'auto'}}>
           <List>
+            {['Categories'].map((text, index) => (
+              <ListItem key={text} disablePadding={false}>
+                  <ListItemText primary={text} sx={{textAlign: 'center', fontWeight: 'bold'}} disableTypography  />
+              </ListItem>
+            ))}
+
             {['Shoes', 'Games', 'Consoles', 'Electronics','Decor'].map((text, index) => (
               <ListItem key={text} disablePadding={false}> 
                 <ListItemButton>
                   {/* <ListItemIcon>
                     {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
                   </ListItemIcon> */}
-                  <ListItemText primary={text}/>
+                  <ListItemText primary={text} sx={{textAlign: 'center'}} />
                 </ListItemButton>
               </ListItem>
             ))}
           </List>       
           <Divider />
           <List>
+            {['Brand'].map((text, index) => (
+              <ListItem key={text} disablePadding={false}>
+                  <ListItemText primary={text} sx={{textAlign: 'center', fontWeight: 'bold'}} disableTypography/>
+              </ListItem>
+            ))}
+
             {['Sony', 'Panini', 'Nike', 'Apple', 'Adidas'].map((text, index) => (
               <ListItem key={text} disablePadding={false}>
                 <ListItemButton>
                   {/* <ListItemIcon>
                     {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
                   </ListItemIcon> */}
-                  <ListItemText primary={text} />
+                  <ListItemText primary={text} sx={{textAlign: 'center'}}/>
                 </ListItemButton>
               </ListItem>
             ))}
           </List>
+          <Divider />        
+          <List>
+            {['Price'].map((text, index) => (
+              <ListItem key={text} disablePadding={false}>
+                  <ListItemText primary={text} sx={{textAlign: 'center', fontWeight: 'bold'}} disableTypography  />
+              </ListItem>
+            ))}
+
+            {['$10 - $25', '$25 - $50', '$50 - $75', '$75 - $100','$100 - $200','$200 - $300','$300 - $400'].map((text, index) => (
+              <ListItem key={text} disablePadding={false}> 
+                <ListItemButton>
+                  {/* <ListItemIcon>
+                    {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                  </ListItemIcon> */}
+                  <ListItemText primary={text} sx={{textAlign: 'center'}} />
+                </ListItemButton>
+              </ListItem>
+            ))}
+          </List>  
+
         </Box>
       </Drawer>
     </Box>
