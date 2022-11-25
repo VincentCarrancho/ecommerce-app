@@ -149,8 +149,9 @@ export default function PrimarySearchAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
-        <Toolbar disableGutters = 'false'>
+      <AppBar position="static" >
+        <Toolbar 
+        disableGutters = 'false'>
           <Search>
             <SearchIconWrapper>
               <SearchIcon />
