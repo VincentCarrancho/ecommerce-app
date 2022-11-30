@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ParentNavandSideBar from './Components/ParentNavAndSideBar'
+import Cart from './Components/Cart'
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<ParentNavandSideBar/>}/>
-        <Route path="/cart" element={<ParentNavandSideBar/>}/>
+        <Route path="/cart" element={<Cart/>}/>
       </Routes>
     </BrowserRouter>
   )
