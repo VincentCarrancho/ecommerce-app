@@ -147,7 +147,7 @@ export default function PrimarySearchAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" >
+      <AppBar position="static">
         <Toolbar 
         disableGutters = 'false'>
           <Search sx={{borderRadius: 12}}>
