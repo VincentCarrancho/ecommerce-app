@@ -1,5 +1,6 @@
 import Navbar from "./Navbar";
 import SubNavbar from "./SubNavbar";
+import ShippingandOrderBar from './ShippingandOrderBar'
 
 
 export default function Cart() {
@@ -7,6 +8,7 @@ export default function Cart() {
       <div>
         <Navbar />
         <SubNavbar />
+        <ShippingandOrderBar/>
       </div>
     );
   }
