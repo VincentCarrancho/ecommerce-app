@@ -93,8 +93,6 @@ export default function PrimarySearchAppBar() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
     </Menu>
   );
 
@@ -152,7 +150,7 @@ export default function PrimarySearchAppBar() {
       <AppBar position="static" >
         <Toolbar 
         disableGutters = 'false'>
-          <Search>
+          <Search sx={{borderRadius: 12}}>
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
