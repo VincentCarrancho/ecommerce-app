@@ -1,5 +1,6 @@
 import { Box } from "@mui/system";
 import React, { useEffect, useState } from "react";
+import ActionAreaCard from "./PrimaryCard";
 
 function ApplicationSection() {
   const [data, setData] = useState([]);
@@ -22,14 +23,33 @@ function ApplicationSection() {
   return (
     <Box
       sx={{
+        paddingTop: "25px",
         width: "100%",
+        display: "grid",
+        gridGap: "25px",
+        gridTemplateColumns: "repeat(auto-fill, 345px)",
       }}
     >
-      <ul>
-        {data.map((product, index) => {
-          return <li key={index}>{product["name"]}</li>;
-        })}
-      </ul>
+      {data.map((product, index) => {
+        return (
+          <ActionAreaCard
+            name={product["name"]}
+            image={product["image"]}
+            price={product["price"]}
+            rating={product["rating"]}
+          />
+        );
+      })}
+      {data.map((product, index) => {
+        return (
+          <ActionAreaCard
+            name={product["name"]}
+            image={product["image"]}
+            price={product["price"]}
+            rating={product["rating"]}
+          />
+        );
+      })}
     </Box>
   );
 }
